@@ -9,7 +9,9 @@ body{
 .App{
   margin: auto;
   max-width: 550px;
-  height: 704px;
+  max-height: 704px;
+  border: 1px black solid;
+  overflow-y: auto;
 }
 
 .nav-container{
@@ -29,4 +31,58 @@ body{
 
 .fa-globe{
   margin-right: 5px;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container{
+  max-width: 470px;
+  height: 168px;
+  padding: 30px;
+  margin-bottom: 90px;
+}
+
+.img-container{
+  float: left;
+}
+
+.location-img{
+  width: 125px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.country{
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.17em;
+}
+
+.map-link{
+  font-weight: 400;
+  font-size: 10px;
+  color: #918e9b;
+  text-decoration: underline;
+}
+
+.place-name{
+  font-weight: 700;
+  font-size: 25px;
+  color: #2b283a;
+}
+
+.dates{
+  font-weight: 700;
+  font-size: 10px;
+  color: #2b283a;
+}
+
+.description{
+  font-weight: 400;
+  font-size: 10px;
+  color: #2b283a;
 }
