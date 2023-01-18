@@ -42,11 +42,19 @@ body{
   max-width: 470px;
   height: 168px;
   padding: 30px;
-  margin-bottom: 90px;
+  margin-bottom: 35px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 8px;
 }
 
 .img-container{
   float: left;
+}
+
+.details{
+  width: 300px;
 }
 
 .location-img{
@@ -60,6 +68,8 @@ body{
   font-weight: 400;
   font-size: 10px;
   letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin-right: 5px;
 }
 
 .map-link{
@@ -67,6 +77,8 @@ body{
   font-size: 10px;
   color: #918e9b;
   text-decoration: underline;
+  position: relative;
+  bottom: 3px;
 }
 
 .place-name{
@@ -79,10 +91,29 @@ body{
   font-weight: 700;
   font-size: 10px;
   color: #2b283a;
+  margin-bottom: -3px;
 }
 
 .description{
   font-weight: 400;
   font-size: 10px;
   color: #2b283a;
+}
+
+.fa-map-marker{
+  color: #f55a5a;
+  margin-right: 3px;
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  margin-bottom: -15px;
+}
+
+hr{
+  width: 478px;
+  border: 1px solid #f5f5f5;
+  position: relative;
+  top: 15px;
 }
